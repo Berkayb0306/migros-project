@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: migros-project-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: migros-project
+  template:
+    metadata:
+      labels:
+        app: migros-project
+    spec:
+      containers:
+      - name: migros-project
+        image: migros-project:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
