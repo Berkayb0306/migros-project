@@ -37,7 +37,7 @@ migros-project/
 ### 1. Clone the Repository
 Clone the repository and navigate to the project directory:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Berkayb0306/migros-project.git
 cd migros-project
 ```
 
@@ -76,7 +76,9 @@ http://localhost:30008
 ```
 
 #### Ingress Access (Optional)
-Add the following entry to your `/etc/hosts` file:
+Note: Ingress configuration is optional and not required for local testing. You can skip it if you prefer using NodePort access.
+
+If you want to use Ingress, add the following entry to your `/etc/hosts` file:
 ```plaintext
 127.0.0.1 migros.local
 ```
